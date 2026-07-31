@@ -1,0 +1,11 @@
+{
+  "appId": "cn.huangli.quicksearch",
+  "appName": "黄历速查",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https"
+  },
+  "android": {
+    "allowMixedContent": false
+  }
+}

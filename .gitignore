@@ -1,0 +1,14 @@
+.superpowers/
+node_modules/
+dist/
+.tooling/
+android-sdk-local/
+.gradle-project-local/
+src-tauri/target/
+android/.gradle/
+android/build/
+android/app/build/
+release/*.exe
+release/*.apk
+release/SHA256SUMS.txt
+release-private/
