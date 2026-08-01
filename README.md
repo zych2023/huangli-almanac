@@ -2,16 +2,40 @@
 
 > 快速查询每日宜忌和未来适宜日期 — Chinese almanac for daily auspicious guidance and future date planning.
 
+## ✨ 优势
+
+- ⚡ **启动极快** — 基于 Tauri 2 桌面端，原生性能，秒开无等待；Web 端 PWA 离线可用
+- 🔒 **无需任何权限** — 桌面端仅请求 `core:default` 基础权限，不上传任何数据，完全离线运行
+- 📦 **体积小巧** — Windows 安装包仅 ~1.9 MB，Android APK 仅 ~3.2 MB，不占空间
+- 🌐 **全平台覆盖** — Web / Windows / Android 三端统一体验
+- 🚫 **无广告、无追踪** — 纯净工具，专注黄历查询
+
+## 📸 界面展示
+
+### 桌面端
+
+| 查询宜 | 查询忌 | 设置与时区 |
+|:---:|:---:|:---:|
+| ![桌面端-宜](screenshots/desktop-yi.png) | ![桌面端-忌](screenshots/desktop-ji.png) | ![桌面端-设置](screenshots/desktop-settings.png) |
+
+### 移动端
+
+| 查询宜 | 查询忌 | 设置与时区 |
+|:---:|:---:|:---:|
+| ![移动端-宜](screenshots/mobile-yi.jpg) | ![移动端-忌](screenshots/mobile-ji.jpg) | ![移动端-设置](screenshots/mobile-settings.jpg) |
+
 ## 功能
 
 - 📅 查询每日黄历宜忌
 - 🔍 查找未来适宜做某事的日期
 - 🌙 农历日期显示
-- 📱 支持 Web / Android / 桌面端
+- ⏰ 多时区支持，海外用户也可使用
+- 🔧 自定义快捷助手，常用宜忌一键查询
+- 📱 支持 Web / Windows / Android
 
 ## 技术栈
 
-Preact + TypeScript + Vite + Tauri + Capacitor + PWA
+Preact + TypeScript + Vite + Tauri 2 + Capacitor + PWA
 
 ## 项目结构
 
@@ -37,6 +61,7 @@ huangli-almanac/
 ├── public/                  # 静态资源（PWA 图标等）
 ├── docs/                    # 设计文档与规划
 ├── release/                 # 构建产物（.apk / .exe）
+├── screenshots/             # 界面截图
 │
 ├── index.html               # HTML 入口
 ├── package.json             # npm 项目配置与脚本
