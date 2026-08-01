@@ -115,7 +115,7 @@ export function HomePage({ today, startDate, searchMode, quickActivities, search
       </section>
 
       {results && (
-        <section class="results-section" aria-labelledby="results-title">
+        <section class={`results-section ${isSuitableMode ? "suitable-mode" : "unsuitable-mode"}`} aria-labelledby="results-title">
           <div class="section-heading"><div><span class="eyebrow">查询结果</span><h2 id="results-title">{isSuitableMode ? "适合的日期" : "不宜的日期"}</h2></div><span class="match-note">匹配黄历术语：{matchedLabel}</span></div>
           {results.length ? <div class="result-list">{results.map((result) => (
             <button class="result-row" type="button" key={result.solarDate} aria-label={`查看 ${formatChineseDate(result.solarDate)}`} onClick={() => onOpenDate(result.solarDate)}>
