@@ -3,5 +3,5 @@
   "identifier": "default",
   "description": "Base capability for the Huangli window",
   "windows": ["main"],
-  "permissions": ["core:default"]
+  "permissions": ["core:default", "opener:default"]
 }

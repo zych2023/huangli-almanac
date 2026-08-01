@@ -28,17 +28,9 @@
 
 ### 移动端
 
-**查询宜**
-
-![移动端-宜](screenshots/mobile-yi.jpg)
-
-**查询忌**
-
-![移动端-忌](screenshots/mobile-ji.jpg)
-
-**设置与时区**
-
-![移动端-设置](screenshots/mobile-settings.jpg)
+| 查询宜 | 查询忌 | 设置与时区 |
+|:---:|:---:|:---:|
+| ![移动端-宜](screenshots/mobile-yi.jpg) | ![移动端-忌](screenshots/mobile-ji.jpg) | ![移动端-设置](screenshots/mobile-settings.jpg) |
 
 - 🔄 点击左上角 **「宜/忌」** 图标切换查询模式
 - 🔍 在搜索框输入事项（如"理发""出行"），查找宜忌日期

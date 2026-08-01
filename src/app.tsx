@@ -10,6 +10,18 @@ import { DatePage } from "./pages/date-page";
 import { HomePage } from "./pages/home-page";
 import { loadQuickActivityLabels, loadTimezoneMode, saveQuickActivityLabels, saveTimezoneMode } from "./state/preferences";
 
+const PROJECT_URL = "https://github.com/zych2023/huangli-almanac";
+
+async function openProjectUrl(event: Event) {
+  event.preventDefault();
+  try {
+    const { openUrl } = await import("@tauri-apps/plugin-opener");
+    await openUrl(PROJECT_URL);
+  } catch {
+    window.open(PROJECT_URL, "_blank", "noopener,noreferrer");
+  }
+}
+
 export function App() {
   const [mode, setMode] = useState<TimezoneMode>(() => loadTimezoneMode());
   const [searchMode, setSearchMode] = useState<SearchMode>("suitable");
@@ -47,7 +59,7 @@ export function App() {
         {selectedDate && <DatePage day={getAlmanacDay(selectedDate)} onNavigate={setSelectedDate} onBack={() => setSelectedDate(null)} />}
       </main>
       <footer>
-        <a class="footer-project-link" href="https://github.com/zych2023/huangli-almanac" target="_blank" rel="noopener noreferrer">github.com/zych2023/huangli-almanac</a>
+        <a class="footer-project-link" href={PROJECT_URL} target="_blank" rel="noopener noreferrer" onClick={openProjectUrl}>github.com/zych2023/huangli-almanac</a>
         <span class="footer-author">zych2023</span>
         <span>传统民俗信息，仅供参考</span>
       </footer>
