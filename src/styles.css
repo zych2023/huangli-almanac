@@ -96,5 +96,5 @@ footer { min-height: 62px; display: flex; justify-content: center; align-items: 
   .date-inputs { flex-direction: column; }.date-inputs input { width: 100%; }
   footer { flex-direction: column; gap: 3px; }
   .footer-project-link { display: none; }
-  .footer-author { color: #99958d; }
+  .footer-author { display: inline; color: #99958d; }
 }
