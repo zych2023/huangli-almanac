@@ -6,56 +6,92 @@
 <title>Icon Font Preview</title>
 <style>
   body { font-family: system-ui, sans-serif; background: #f0ede6; padding: 30px; }
-  h1 { text-align: center; margin-bottom: 10px; }
-  p.sub { text-align: center; color: #666; margin-bottom: 40px; }
-  .grid { display: flex; flex-wrap: wrap; gap: 24px; justify-content: center; }
-  .card { background: #fff; border-radius: 12px; padding: 24px; text-align: center; box-shadow: 0 2px 12px rgba(0,0,0,.08); }
-  .card h3 { margin: 14px 0 6px; font-size: 16px; }
-  .card small { color: #888; font-size: 12px; }
-  .card img { display: block; margin: 0 auto; border-radius: 16px; }
-  .card .sizes { display: flex; gap: 10px; justify-content: center; margin-bottom: 8px; }
-  .card .sizes img { border-radius: 6px; }
-  .card .sizes div { text-align: center; }
-  .card .sizes small { display: block; margin-top: 3px; }
+  h1 { text-align: center; margin-bottom: 6px; }
+  p.sub { text-align: center; color: #888; margin-bottom: 10px; }
+  .section { max-width: 1200px; margin: 0 auto 36px; }
+  .section h2 { font-size: 18px; border-bottom: 1px solid #d5d0c5; padding-bottom: 8px; margin-bottom: 16px; color: #555; }
+  .grid { display: flex; flex-wrap: wrap; gap: 18px; }
+  .card { background: #fff; border-radius: 12px; padding: 18px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,.06); width: 140px; }
+  .card img { border-radius: 12px; display: block; margin: 0 auto; }
+  .card h3 { margin: 10px 0 2px; font-size: 14px; }
+  .card small { color: #aaa; font-size: 11px; }
+  .card .tag { display: inline-block; padding: 1px 7px; border-radius: 3px; font-size: 10px; margin-top: 3px; }
+  .tag.bold { background: #fce4d6; color: #c55a11; }
+  .tag.circle { background: #d9eaf7; color: #1a6daa; }
+  .tag.seal { background: #e2d5f1; color: #6b3fa0; }
+  .tag.char { background: #d5f0e0; color: #1a7a4c; }
 </style>
 </head>
 <body>
-<h1>App Icon — 8 Fonts</h1>
-<p class="sub">Red bg + white 'yi' char · Pick one</p>
+<h1>App Icon Preview</h1>
+<p class="sub">23 variants &middot; Click any to view full size</p>
 
+<div class="section">
+<h2>Round 1 &mdash; Regular weight, square, &ldquo;yi&rdquo;</h2>
 <div class="grid">
-  <div class="card">
-    <img src="icon-variants/01-georgia.png" width="160" alt="Georgia">
-    <h3>01 · Georgia</h3><small>Current · serif</small>
-  </div>
-  <div class="card">
-    <img src="icon-variants/02-simsun.png" width="160" alt="SimSun">
-    <h3>02 · SimSun</h3><small>Song Ti · classic print</small>
-  </div>
-  <div class="card">
-    <img src="icon-variants/03-kaiti.png" width="160" alt="KaiTi">
-    <h3>03 · KaiTi</h3><small>Kai Ti · calligraphic</small>
-  </div>
-  <div class="card">
-    <img src="icon-variants/04-yahei.png" width="160" alt="Microsoft YaHei">
-    <h3>04 · Microsoft YaHei</h3><small>modern sans-serif</small>
-  </div>
-  <div class="card">
-    <img src="icon-variants/05-simhei.png" width="160" alt="SimHei">
-    <h3>05 · SimHei</h3><small>Hei Ti · bold sans</small>
-  </div>
-  <div class="card">
-    <img src="icon-variants/06-fangsong.png" width="160" alt="FangSong">
-    <h3>06 · FangSong</h3><small>Fang Song · delicate</small>
-  </div>
-  <div class="card">
-    <img src="icon-variants/07-noto-serif.png" width="160" alt="Noto Serif SC">
-    <h3>07 · Noto Serif SC</h3><small>Source Han Serif</small>
-  </div>
-  <div class="card">
-    <img src="icon-variants/08-noto-sans.png" width="160" alt="Noto Sans SC">
-    <h3>08 · Noto Sans SC</h3><small>Source Han Sans</small>
-  </div>
+  <div class="card"><a href="icon-variants/01-georgia.png" target="_blank"><img src="icon-variants/01-georgia.png" width="100"></a><h3>01 Georgia</h3><small>current</small></div>
+  <div class="card"><a href="icon-variants/02-simsun.png" target="_blank"><img src="icon-variants/02-simsun.png" width="100"></a><h3>02 SimSun</h3><small>song ti</small></div>
+  <div class="card"><a href="icon-variants/03-kaiti.png" target="_blank"><img src="icon-variants/03-kaiti.png" width="100"></a><h3>03 KaiTi</h3><small>kai ti</small></div>
+  <div class="card"><a href="icon-variants/04-yahei.png" target="_blank"><img src="icon-variants/04-yahei.png" width="100"></a><h3>04 YaHei</h3><small>sans-serif</small></div>
+  <div class="card"><a href="icon-variants/05-simhei.png" target="_blank"><img src="icon-variants/05-simhei.png" width="100"></a><h3>05 SimHei</h3><small>hei ti</small></div>
+  <div class="card"><a href="icon-variants/06-fangsong.png" target="_blank"><img src="icon-variants/06-fangsong.png" width="100"></a><h3>06 FangSong</h3><small>fang song</small></div>
+  <div class="card"><a href="icon-variants/07-noto-serif.png" target="_blank"><img src="icon-variants/07-noto-serif.png" width="100"></a><h3>07 Noto Serif</h3><small>source han serif</small></div>
+  <div class="card"><a href="icon-variants/08-noto-sans.png" target="_blank"><img src="icon-variants/08-noto-sans.png" width="100"></a><h3>08 Noto Sans</h3><small>source han sans</small></div>
 </div>
+</div>
+
+<div class="section">
+<h2>Round 2 &mdash; Bold weight, square</h2>
+<div class="grid">
+  <div class="card"><a href="icon-variants/09-kaiti-bold-yi.png" target="_blank"><img src="icon-variants/09-kaiti-bold-yi.png" width="100"></a><h3>09 KaiTi Bold</h3><small><span class="tag bold">bold</span></small></div>
+  <div class="card"><a href="icon-variants/10-kaiti-bold-huang.png" target="_blank"><img src="icon-variants/10-kaiti-bold-huang.png" width="100"></a><h3>10 KaiTi Bold</h3><small><span class="tag bold">bold</span> <span class="tag char">huang</span></small></div>
+  <div class="card"><a href="icon-variants/11-yahei-bold-yi.png" target="_blank"><img src="icon-variants/11-yahei-bold-yi.png" width="100"></a><h3>11 YaHei Bold</h3><small><span class="tag bold">bold</span></small></div>
+  <div class="card"><a href="icon-variants/12-yahei-bold-huang.png" target="_blank"><img src="icon-variants/12-yahei-bold-huang.png" width="100"></a><h3>12 YaHei Bold</h3><small><span class="tag bold">bold</span> <span class="tag char">huang</span></small></div>
+  <div class="card"><a href="icon-variants/13-simsun-bold-yi.png" target="_blank"><img src="icon-variants/13-simsun-bold-yi.png" width="100"></a><h3>13 SimSun Bold</h3><small><span class="tag bold">bold</span></small></div>
+  <div class="card"><a href="icon-variants/14-simsun-bold-huang.png" target="_blank"><img src="icon-variants/14-simsun-bold-huang.png" width="100"></a><h3>14 SimSun Bold</h3><small><span class="tag bold">bold</span> <span class="tag char">huang</span></small></div>
+  <div class="card"><a href="icon-variants/15-fangsong-bold-yi.png" target="_blank"><img src="icon-variants/15-fangsong-bold-yi.png" width="100"></a><h3>15 FangSong Bold</h3><small><span class="tag bold">bold</span></small></div>
+  <div class="card"><a href="icon-variants/16-notoserif-bold-yi.png" target="_blank"><img src="icon-variants/16-notoserif-bold-yi.png" width="100"></a><h3>16 NotoSerif Bold</h3><small><span class="tag bold">bold</span></small></div>
+  <div class="card"><a href="icon-variants/17-notoserif-bold-huang.png" target="_blank"><img src="icon-variants/17-notoserif-bold-huang.png" width="100"></a><h3>17 NotoSerif Bold</h3><small><span class="tag bold">bold</span> <span class="tag char">huang</span></small></div>
+</div>
+</div>
+
+<div class="section">
+<h2>Round 3 &mdash; Circle &amp; Seal style</h2>
+<div class="grid">
+  <div class="card"><a href="icon-variants/18-kaiti-circle.png" target="_blank"><img src="icon-variants/18-kaiti-circle.png" width="100"></a><h3>18 KaiTi Circle</h3><small><span class="tag circle">circle</span></small></div>
+  <div class="card"><a href="icon-variants/19-yahei-circle.png" target="_blank"><img src="icon-variants/19-yahei-circle.png" width="100"></a><h3>19 YaHei Circle</h3><small><span class="tag circle">circle</span></small></div>
+  <div class="card"><a href="icon-variants/20-notoserif-circle.png" target="_blank"><img src="icon-variants/20-notoserif-circle.png" width="100"></a><h3>20 Serif Circle</h3><small><span class="tag circle">circle</span></small></div>
+  <div class="card"><a href="icon-variants/21-kaiti-seal.png" target="_blank"><img src="icon-variants/21-kaiti-seal.png" width="100"></a><h3>21 KaiTi Seal</h3><small><span class="tag seal">seal</span></small></div>
+  <div class="card"><a href="icon-variants/22-simsun-seal.png" target="_blank"><img src="icon-variants/22-simsun-seal.png" width="100"></a><h3>22 SimSun Seal</h3><small><span class="tag seal">seal</span></small></div>
+  <div class="card"><a href="icon-variants/23-fangsong-seal.png" target="_blank"><img src="icon-variants/23-fangsong-seal.png" width="100"></a><h3>23 FangSong Seal</h3><small><span class="tag seal">seal</span></small></div>
+</div>
+</div>
+
+<div class="section">
+<h2>Round 4 &mdash; Chinese calligraphy &amp; more fonts, &ldquo;yi&rdquo;</h2>
+<div class="grid">
+  <div class="card"><a href="icon-variants/24-hwxingkai.png" target="_blank"><img src="icon-variants/24-hwxingkai.png" width="100"></a><h3>24 XingKai</h3><small>semi-cursive</small></div>
+  <div class="card"><a href="icon-variants/25-hwkaiti.png" target="_blank"><img src="icon-variants/25-hwkaiti.png" width="100"></a><h3>25 HW KaiTi</h3><small>calligraphic</small></div>
+  <div class="card"><a href="icon-variants/26-hwlishu.png" target="_blank"><img src="icon-variants/26-hwlishu.png" width="100"></a><h3>26 LiShu</h3><small>clerical script</small></div>
+  <div class="card"><a href="icon-variants/27-hwxinwei.png" target="_blank"><img src="icon-variants/27-hwxinwei.png" width="100"></a><h3>27 XinWei</h3><small>distinctive</small></div>
+  <div class="card"><a href="icon-variants/28-hwzhongsong.png" target="_blank"><img src="icon-variants/28-hwzhongsong.png" width="100"></a><h3>28 ZhongSong</h3><small>medium song</small></div>
+  <div class="card"><a href="icon-variants/29-hwxihei.png" target="_blank"><img src="icon-variants/29-hwxihei.png" width="100"></a><h3>29 XiHei</h3><small>thin sans</small></div>
+  <div class="card"><a href="icon-variants/30-hwcaiyun.png" target="_blank"><img src="icon-variants/30-hwcaiyun.png" width="100"></a><h3>30 CaiYun</h3><small>cloud/decorative</small></div>
+  <div class="card"><a href="icon-variants/31-hwhupo.png" target="_blank"><img src="icon-variants/31-hwhupo.png" width="100"></a><h3>31 HuPo</h3><small>amber/bold</small></div>
+  <div class="card"><a href="icon-variants/32-fzshuti.png" target="_blank"><img src="icon-variants/32-fzshuti.png" width="100"></a><h3>32 ShuTi</h3><small>FangZheng</small></div>
+  <div class="card"><a href="icon-variants/33-fzyaoti.png" target="_blank"><img src="icon-variants/33-fzyaoti.png" width="100"></a><h3>33 YaoTi</h3><small>FangZheng</small></div>
+  <div class="card"><a href="icon-variants/34-youyuan.png" target="_blank"><img src="icon-variants/34-youyuan.png" width="100"></a><h3>34 YouYuan</h3><small>rounded</small></div>
+  <div class="card"><a href="icon-variants/35-dengxian.png" target="_blank"><img src="icon-variants/35-dengxian.png" width="100"></a><h3>35 DengXian</h3><small>modern thin</small></div>
+  <div class="card"><a href="icon-variants/36-lishu.png" target="_blank"><img src="icon-variants/36-lishu.png" width="100"></a><h3>36 LiShu</h3><small>classic clerical</small></div>
+  <div class="card"><a href="icon-variants/37-hwsongti.png" target="_blank"><img src="icon-variants/37-hwsongti.png" width="100"></a><h3>37 HW SongTi</h3><small>song ti</small></div>
+  <div class="card"><a href="icon-variants/38-notosans-black.png" target="_blank"><img src="icon-variants/38-notosans-black.png" width="100"></a><h3>38 NotoSans Black</h3><small>heavy sans</small></div>
+  <div class="card"><a href="icon-variants/39-notosans-medium.png" target="_blank"><img src="icon-variants/39-notosans-medium.png" width="100"></a><h3>39 NotoSans Med</h3><small>medium sans</small></div>
+  <div class="card"><a href="icon-variants/40-notosans-thin.png" target="_blank"><img src="icon-variants/40-notosans-thin.png" width="100"></a><h3>40 NotoSans Thin</h3><small>hairline sans</small></div>
+  <div class="card"><a href="icon-variants/41-notoserif-black.png" target="_blank"><img src="icon-variants/41-notoserif-black.png" width="100"></a><h3>41 Serif Black</h3><small>heavy serif</small></div>
+  <div class="card"><a href="icon-variants/42-notoserif-medium.png" target="_blank"><img src="icon-variants/42-notoserif-medium.png" width="100"></a><h3>42 Serif Med</h3><small>medium serif</small></div>
+  <div class="card"><a href="icon-variants/43-notoserif-semibold.png" target="_blank"><img src="icon-variants/43-notoserif-semibold.png" width="100"></a><h3>43 Serif SemiBold</h3><small>semibold serif</small></div>
+</div>
+</div>
+
 </body>
 </html>
