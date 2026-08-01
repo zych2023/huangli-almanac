@@ -46,7 +46,11 @@ export function App() {
         </div>
         {selectedDate && <DatePage day={getAlmanacDay(selectedDate)} onNavigate={setSelectedDate} onBack={() => setSelectedDate(null)} />}
       </main>
-      <footer><span>数据口径 lunar-javascript v1.7.7</span><span>传统民俗信息，仅供参考</span></footer>
+      <footer>
+        <a class="footer-project-link" href="https://github.com/zych2023/huangli-almanac" target="_blank" rel="noopener noreferrer">github.com/zych2023/huangli-almanac</a>
+        <span class="footer-author">zych2023</span>
+        <span>传统民俗信息，仅供参考</span>
+      </footer>
       {settingsOpen && <SettingsDialog mode={mode} quickActivityLabels={quickActivityLabels} activityOptions={activityOptions} onQuickActivitiesChange={changeQuickActivities} onChange={changeMode} onClose={() => setSettingsOpen(false)} />}
     </div>
   );
